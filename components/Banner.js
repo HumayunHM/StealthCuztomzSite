@@ -1,0 +1,35 @@
+import React from "react";
+
+const Banner = () => {
+   return (
+      <div className="flex-grow flex flex-col justify-center items-center text-white text-center px-4 my-24 md:px-60">
+         {/* Headline */}
+         <h1 className="text-5xl md:text-5xl mb-20 font-[Russo_One]">
+            Make Your Car Stand Out – Premium Wraps & Detailing in Quebec
+         </h1>
+
+         {/* 2-Column Row */}
+         <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            {/* Left Column */}
+            <div className="text-lg md:text-2xl font-[Audiowide] text-left">
+               <p>Transform your vehicle with expert vinyl wraps</p>
+            </div>
+
+            {/* Right Column */}
+            <div className="flex justify-start md:justify-end">
+               <a
+                  href="#contact"
+                  className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg 
+                 outline-1 outline-white outline-offset-2 
+                 hover:outline-offset-6
+                 transition-all duration-300 ease-in-out"
+               >
+                  Get a Free Quote
+               </a>
+            </div>
+         </div>
+      </div>
+   );
+};
+
+export default Banner;

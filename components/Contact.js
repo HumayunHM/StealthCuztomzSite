@@ -1,0 +1,122 @@
+import React from "react";
+
+const Contact = () => {
+   return (
+      <section id="contact" className="bg-black text-white py-20 px-6 md:px-20">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            {/* Left Side */}
+            <div>
+               <h2 className="text-5xl font-[Russo_One] mb-10">Contact Us</h2>
+               {/* Contact Info List */}
+               <div className="space-y-6 text-lg font-[Audiowide]">
+                  {/* Email */}
+                  <div className="flex items-center gap-4">
+                     <svg
+                        className="w-6 h-6 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        viewBox="0 0 24 24"
+                     >
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                     </svg>
+                     <span>info@stealthcustomz.ca</span>
+                  </div>
+
+                  {/* Phone */}
+                  <div className="flex items-center gap-4">
+                     <svg
+                        className="w-6 h-6 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        viewBox="0 0 24 24"
+                     >
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                     </svg>
+                     <span>250 555 0199</span>
+                  </div>
+
+                  {/* Address */}
+                  <div className="flex items-center gap-4">
+                     <svg
+                        className="w-6 h-6 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        viewBox="0 0 24 24"
+                     >
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                     </svg>
+                     <span>2695 Bd Pitfield, Saint-Laurent Quebec H4S 1T2</span>
+                  </div>
+               </div>
+
+               {/* Gray Rounded Box */}
+               <div className="w-5/6 h-48 bg-[#D9D9D9] rounded-xl mt-16" />
+            </div>
+
+            {/* Right Side Form */}
+            <div>
+               <form className="space-y-8 font-[Audiowide]">
+                  {/* First Name */}
+                  <div>
+                     <label className="block text-left mb-2">First Name</label>
+                     <input
+                        type="text"
+                        className="w-full bg-transparent border-b border-white text-white focus:outline-none py-2"
+                     />
+                  </div>
+
+                  {/* Last Name */}
+                  <div>
+                     <label className="block text-left mb-2">Last Name</label>
+                     <input
+                        type="text"
+                        className="w-full bg-transparent border-b border-white text-white focus:outline-none py-2"
+                     />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                     <label className="block text-left mb-2">Email</label>
+                     <input
+                        type="email"
+                        className="w-full bg-transparent border-b border-white text-white focus:outline-none py-2"
+                     />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                     <label className="block text-left mb-2">Message</label>
+                     <textarea
+                        rows="4"
+                        className="w-full bg-transparent border-b border-white text-white focus:outline-none py-2"
+                     />
+                  </div>
+
+                  {/* Submit Button */}
+                  <div className="flex justify-center mt-14">
+                     <button
+                        type="submit"
+                        className="text-white text-xl font-[Russo_One] px-7 py-2 rounded-lg outline-1 outline-white outline-offset-2 hover:outline-offset-6 transition-all duration-300 ease-in-out"
+                     >
+                        Submit
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+   );
+};
+
+export default Contact;
