@@ -7,7 +7,7 @@ const Footer = () => {
       <hr className="border-t border-white mb-6 w-[90%] mx-auto" />
 
       {/* Footer text */}
-      <p className="text-xl font-[Audiowide] ml-24">
+      <p className="text-xl font-[Audiowide] md:ml-24 text-center">
         Stealth Customz © 2025 All Rights Reserved
       </p>
     </footer>
