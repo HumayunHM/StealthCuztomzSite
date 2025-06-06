@@ -1,46 +1,80 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
    return (
       <section className="bg-black text-white py-20 px-4 text-center">
          {/* Heading */}
-         <h2 className="text-5xl font-[Russo_One] text-center mb-24">
-            Why Choose Us
-         </h2>
+         <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+         >
+            <h2 className="text-5xl font-[Russo_One] text-center mb-24">
+               Why Choose Us
+            </h2>
+         </motion.div>
 
          {/* 4-Item Grid */}
          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center text-lg font-[Audiowide]">
             {/* Item 1 */}
-            <div>
+            <motion.div
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.2, delay: 0.5 }}
+            >
                <div className="w-24 h-24 mx-auto rounded-full bg-[#D9D9D9]" />
                <p className="mt-4">5+ Years Experience</p>
-            </div>
+            </motion.div>
 
             {/* Item 2 */}
-            <div>
+            <motion.div
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.2, delay: 0.8 }}
+            >
                <div className="w-24 h-24 mx-auto rounded-full bg-[#D9D9D9]" />
                <p className="mt-4">Experienced Team</p>
-            </div>
+            </motion.div>
 
             {/* Item 3 */}
-            <div>
+            <motion.div
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.2, delay: 1.1 }}
+            >
                <div className="w-24 h-24 mx-auto rounded-full bg-[#D9D9D9]" />
                <p className="mt-4">Fast Turnaround</p>
-            </div>
+            </motion.div>
 
             {/* Item 4 */}
-            <div>
+            <motion.div
+               initial={{ opacity: 0, x: -100 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.2, delay: 1.4 }}
+            >
                <div className="w-24 h-24 mx-auto rounded-full bg-[#D9D9D9]" />
                <p className="mt-4">Affordable Pricing</p>
-            </div>
+            </motion.div>
          </div>
          <div className="flex justify-center items-center mt-24">
-            <a
+            <motion.a
+               initial={{ opacity: 0, y: -50 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               transition={{ duration: 0.2, delay: 2, ease: "easeInOut" }}
                href="#contact"
                className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:-translate-y-2 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
             >
                Get a Free Quote
-            </a>
+            </motion.a>
          </div>
       </section>
    );

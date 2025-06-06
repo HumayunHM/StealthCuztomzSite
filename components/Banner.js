@@ -21,12 +21,12 @@ const Banner = () => {
          {/* 2-Column Row */}
          <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             {/* Left Column */}
-            <div className="text-lg md:text-2xl font-[Audiowide] text-left text-shadow-lg">
+            <div className="text-2xl md:text-2xl font-[Audiowide] text-left text-shadow-lg">
                <motion.p
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: 0 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.1, delay: 1.6 }}
+                  transition={{ duration: 0.5, delay: 1.6 }}
                >
                   Transform your vehicle with expert vinyl wraps
                </motion.p>
@@ -35,10 +35,10 @@ const Banner = () => {
             {/* Right Column */}
             <div className="flex justify-start md:justify-end">
                <motion.a
-                  initial={{ opacity: 0, x: -50 }}
+                  initial={{ opacity: 0, x: 0 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.1, delay: 1.6 }}
+                  transition={{ duration: 0.5, delay: 1.6 }}
                   href="#contact"
                   className="text-white text-lg font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white bg-black/60 outline-offset-2 hover:-translate-y-2 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
                >
