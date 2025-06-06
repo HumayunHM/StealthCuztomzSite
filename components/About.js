@@ -34,13 +34,10 @@ const About = () => {
                <p className="mt-4">Affordable Pricing</p>
             </div>
          </div>
-         <div className="mt-24">
+         <div className="flex justify-center items-center mt-24">
             <a
                href="#contact"
-               className="text-white text-xl font-[Russo_One] px-7 py-2 rounded-lg 
-                 outline-1 outline-white outline-offset-2 
-                 hover:outline-offset-6
-                 transition-all duration-300 ease-in-out"
+               className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:-translate-y-2 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
             >
                Get a Free Quote
             </a>

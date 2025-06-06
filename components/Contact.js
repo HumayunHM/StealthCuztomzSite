@@ -12,7 +12,7 @@ const Contact = () => {
                   {/* Email */}
                   <div className="flex items-center gap-4">
                      <svg
-                        className="w-6 h-6 text-white"
+                        className="w-7 h-7 text-purple-600"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
@@ -29,7 +29,7 @@ const Contact = () => {
                   {/* Phone */}
                   <div className="flex items-center gap-4">
                      <svg
-                        className="w-6 h-6 text-white"
+                        className="w-7 h-7 text-purple-600"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
@@ -45,7 +45,7 @@ const Contact = () => {
                   {/* Address */}
                   <div className="flex items-center gap-4">
                      <svg
-                        className="w-6 h-6 text-white"
+                        className="w-7 h-7 text-purple-600"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
@@ -107,7 +107,7 @@ const Contact = () => {
                   <div className="flex justify-center mt-14">
                      <button
                         type="submit"
-                        className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:outline-offset-6 transition-all duration-300 ease-in-out"
+                        className="text-white text-lg px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:cursor-pointer hover:-translate-y-1 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
                      >
                         Submit
                      </button>
@@ -120,3 +120,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

@@ -49,10 +49,10 @@ const NavBar = () => {
             </div>
 
             {/* Right: Contact Button */}
-            <div>
+            <div className="flex justify-center items-center">
                <a
                   href="#contact"
-                  className="text-white text-lg font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:outline-offset-6 transition-all duration-300 ease-in-out"
+                  className="text-white text-lg font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:-translate-y-1 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
                >
                   Contact
                </a>
