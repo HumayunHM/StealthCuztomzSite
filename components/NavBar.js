@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/images/logo.png";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
    return (
