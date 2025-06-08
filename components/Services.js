@@ -25,7 +25,7 @@ const Services = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10"
+            className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10"
          >
             {/* Card 1 */}
             <div className="bg-[#D9D9D9] rounded-xl w-full aspect-[208/250]" />
@@ -46,7 +46,7 @@ const Services = () => {
                initial={{ opacity: 0, y: -50 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
-               transition={{ duration: 0.2, delay: 1.0, ease: "easeInOut" }}
+               transition={{ duration: 0.2, delay: 0.8, ease: "easeInOut" }}
                href="#contact"
                className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:-translate-y-2 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
             >

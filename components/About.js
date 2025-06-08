@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
    return (
-      <section className="bg-black text-white py-20 px-4 text-center">
+      <section id="about" className="bg-black text-white py-20 px-4 text-center">
          {/* Heading */}
          <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -69,7 +69,7 @@ const About = () => {
                initial={{ opacity: 0, y: -50 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
-               transition={{ duration: 0.2, delay: 2, ease: "easeInOut" }}
+               transition={{ duration: 0.2, delay: 1.7, ease: "easeInOut" }}
                href="#contact"
                className="text-white text-xl font-[Russo_One] px-7 py-1 rounded-lg outline-1 outline-white outline-offset-2 hover:-translate-y-2 hover:underline hover:underline-offset-4 hover:decoration-purple-600 transition-transform duration-300"
             >
