@@ -101,7 +101,7 @@ const NavBar = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.1, delay: 0.7 }}
-                  className="hover:text-purple-600 scale-120 transition-colors duration-300"
+                  className="hover:text-purple-600 hover:-translate-y-1 scale-120 transition-transform  duration-300"
                >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ const NavBar = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.1, delay: 0.8 }}
-                  className="hover:text-purple-600 scale-120 transition-colors duration-300"
+                  className="hover:text-purple-600 hover:-translate-y-1 scale-120 transition-transform duration-300"
                >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
